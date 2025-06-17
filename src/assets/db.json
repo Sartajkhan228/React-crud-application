@@ -1,0 +1,67 @@
+{
+  "users": [
+    {
+      "id": "0729",
+      "username": "jfoasf",
+      "email": "jkhfsgfksf@gmail.com",
+      "password": "sghasiogo"
+    },
+    {
+      "id": "00d1",
+      "username": "fhaiog",
+      "email": "khanalam7328@gmail.com",
+      "password": "sdkfhasdij"
+    },
+    {
+      "id": "4d30",
+      "username": "skjghasig",
+      "email": "example@gmail.com",
+      "password": "skadfyhasiogo"
+    },
+    {
+      "id": "e145",
+      "username": "asgasdgf",
+      "email": "john@example.com",
+      "password": "hasdjkfhaspfi"
+    },
+    {
+      "id": "c9cb",
+      "username": "ajksfhasigh",
+      "email": "snee@example.com",
+      "password": "jkghaskgh"
+    },
+    {
+      "id": "4fef",
+      "username": "fjaslfh",
+      "email": "jkhfsgfksf@gmail.com",
+      "password": "sfkasjbk"
+    }
+  ],
+  "posts": [
+    {
+      "id": "5",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
