@@ -9,6 +9,7 @@ const PostList = ({ handleEdit }) => {
 
     const { data, isLoading, isError } = useGetUsersQuery({ page, limit });
     const [deleteUsers] = useDeleteUsersMutation();
+    console.log(data, "api data")
 
     const users = data?.users || [];
     const totalCount = data?.totalCount || 0;
@@ -16,7 +17,7 @@ const PostList = ({ handleEdit }) => {
 
     const handleDelete = async (id) => {
         try {
-            await deleteUsers(id);
+            await deleteUsers(id).unwrap();
         } catch (error) {
             console.error("Error deleting user:", error);
         }
@@ -35,7 +36,7 @@ const PostList = ({ handleEdit }) => {
     }
 
     if (isError) {
-        return <div className="text-center text-red-600 font-medium mt-6">Error fetching users.</div>;
+        return <div className="text-center text-red-600 font-medium mt-6">Error fetching users.{isError}</div>;
     }
 
     return (
@@ -66,6 +67,7 @@ const PostList = ({ handleEdit }) => {
                                 >
                                     Delete
                                 </button>
+
                                 <button
                                     onClick={() => {
                                         window.scrollTo({ top: 0, behavior: 'smooth' });

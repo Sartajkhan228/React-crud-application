@@ -1,5 +1,6 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react"
 
+
 export const dataBaseApiSlice = createApi({
     reducerPath: "fileApi",
     baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:3000/" }),
@@ -8,7 +9,7 @@ export const dataBaseApiSlice = createApi({
         getUsers: builder.query({
             query: ({ page = 1, limit = 5 }) => ({
                 url: `/users`,
-                params: { _page: page, _limit: limit }, // <- this is what json-server understands
+                params: { _page: page, _limit: limit },
             }),
             transformResponse: (response, meta) => {
                 const totalCount = Number(meta.response.headers.get('X-Total-Count'));
@@ -52,5 +53,8 @@ export const {
     useDeleteUsersMutation,
     useUpdateUsersMutation,
 } = dataBaseApiSlice;
+
+
+
 
 

@@ -7,10 +7,11 @@ const AddPosts = () => {
     const [addPost, { isLoading, isError }] = useAddUsersMutation();
     const [updateUsers] = useUpdateUsersMutation();
 
+
     const initialInput = {
         username: "",
         email: "",
-        password: ""
+        password: "",
     }
 
     const [input, setInput] = useState(initialInput);

@@ -1,10 +1,10 @@
 {
   "users": [
     {
-      "id": "0729",
-      "username": "jfoasf",
+      "username": "sartaj khan",
       "email": "jkhfsgfksf@gmail.com",
-      "password": "sghasiogo"
+      "password": "sghasiogo",
+      "id": "0729"
     },
     {
       "id": "00d1",
@@ -19,22 +19,16 @@
       "password": "skadfyhasiogo"
     },
     {
-      "id": "e145",
-      "username": "asgasdgf",
-      "email": "john@example.com",
-      "password": "hasdjkfhaspfi"
-    },
-    {
-      "id": "c9cb",
-      "username": "ajksfhasigh",
-      "email": "snee@example.com",
-      "password": "jkghaskgh"
-    },
-    {
-      "id": "4fef",
-      "username": "fjaslfh",
+      "username": "I am fine",
       "email": "jkhfsgfksf@gmail.com",
-      "password": "sfkasjbk"
+      "password": "aslfhaweio",
+      "id": "e067"
+    },
+    {
+      "username": "aldgaogh",
+      "email": "example@gmail.com",
+      "password": "hfg84erg",
+      "id": "2b74"
     }
   ],
   "posts": [
